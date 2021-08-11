@@ -11,7 +11,7 @@ app.use(cors())
 //Habilitar express.json / tambien se puede utilizar bodyparser
 app.use(express.json({extended : true}))
 //puerto de la app
-const port = process.env.port || 4000;
+const port = process.env.PORT || 4000;
 //Importar rutas
 app.use('/api/usuarios', require('./routes/usuarios'));
 app.use('/api/auth', require('./routes/auth'))
